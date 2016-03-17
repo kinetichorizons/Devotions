@@ -2,7 +2,7 @@
 <widget xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:vs="http://schemas.microsoft.com/appx/2014/htmlapps" id="kinetichorizons.org" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" defaultlocale="en-US" android-versionCode="1">
   <name>Kinetic Horizons</name>
   <description>Daily devotions by Kenneth &amp; Gloria Copeland...</description>
-  <author href="http://cordova.io" email="dev@cordova.apache.org">Michael Hall</author>
+  <author href="http://kinetichorizons.org" email="support@kinetichorizons.org">Michael Hall</author>
   <content src="index.html" />
   <access origin="*" />
   <vs:features />
