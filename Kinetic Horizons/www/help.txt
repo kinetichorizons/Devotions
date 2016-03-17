@@ -1,0 +1,11 @@
+<h2>Viewing Devotions:</h2>
+Today's devotion will be displayed automatically...<br>
+If you want to view a different date then click the date button and enter Eg. 1 for january and 1 for the first<br>
+To exit this help document just press the reload button.<br>
+<br>
+This app is still being maintained and updates will be available throughout. You will be notified upon usage of this app<br>
+as long as you are connected to the internet.<br>
+<br>
+The devotions were written by Kenneth & Gloria Copeland<br><a href="http://kennethcopelandministries.org>kennethcopelandministries.org</a><br>
+<br>
+This app was written by mikeyhalla aka Michael Hall with the help of Apache Cordova & Visual Studio...

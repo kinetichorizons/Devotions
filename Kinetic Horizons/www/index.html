@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <title>Kinetic Horizons</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $.get("http://www.steppingintothelightministry.com/apps/KHversion.txt", function (data) {
+            var y = 1.1;
+            if (data > y) {
+                if (confirm("Update is available!")) window.open('http://www.steppingintothelightministry.com/apps/kinetichorizons.apk', '_system', 'location=yes');
+            }
+        });
+    </script>
+    <script language="JavaScript">
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+        today = mm + '/' + dd;
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $('#datepicker').datepicker({ dateFormat: 'mm/dd' });
+        })
+    </script>
+    <script type="text/javascript">
+        function onLoad()
+        {
+            $('#results').load('dev/' + (today) + '.html');
+            document.addEventListener("deviceready", onDeviceReady, true);
+        }
+        function exitFromApp()
+        {
+            navigator.app.exitApp();
+        }
+    </script>
+</head>
+<body onload="onLoad();">
+    <header>
+        <div class="center">
+            <img style="width:70%;" src="images/logo.png" alt="">
+            <h3 style="line-height:20px">Daily Devotions</h3><br /><br />
+        </div>
+    </header>
+    <div class="textshadow center">
+        <button type="button" class="button" onclick="window.location.reload()">Reload Devotion</button>
+    </div>
+    <br />
+    <div class="dev" id="results"></div><br />
+    <div class="textshadow center">
+        <p><a href="#" onclick="window.open('http://www.kcm.org/', '_system');">All credits for the devotions go to Kenneth &amp; Gloria Copeland.</a></p><br />
+        <div class="center">
+            <div class="textshadow image thumbnail">
+                <input type="image" value="Choose Date" id="datepicker" onchange="$('#results').load('dev/' + (document.getElementById('datepicker').value) + '.html'); window.scrollTo(0, 0);" style="width:35%;" src="images/Calendar.png">
+                <p>Choose a Daily Devotion...</p>
+            </div>
+        </div><br /><br />
+        <div class="textshadow center">
+            <button type="button" style="width:35%;" class="button" onclick="exitFromApp();">Exit</button>
+        </div>
+    </div><br /><br />
+    <div class="center thumbnail">
+        <div class="image">
+            <a onclick="openThatLink2()">
+                <img src="images/paypal.png" alt="Donate!">
+            </a>
+        </div>
+        <br />
+        <p><img src="images/logo.png"></p>
+        <h3>&copy;2016 Kinetic Horizons, Inc.</h3>
+        <p class="textshadow">This app is version 1.1.0</p>
+    </div>
+    <script type="text/javascript">
+        function openThatLink2() {
+            window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KWYAN59BZ7Z8S', '_system', 'location=yes');
+        }
+    </script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            exitFromApp();
+        }, 600000);
+    </script>
+</body>
+</html>
