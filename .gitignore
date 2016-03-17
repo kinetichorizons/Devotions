@@ -6,6 +6,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+Kinetic Horizons/res/native/android/ant.properties
+Kinetic Horizons/build.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
