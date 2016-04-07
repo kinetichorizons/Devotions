@@ -1576,7 +1576,7 @@
 	}
 
 	a {
-		color: #CC3300;
+		color: #FF9900;
 	}
 
 	strong, b {
@@ -1690,7 +1690,7 @@
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			box-shadow: 0px 0px 2px 2px #c94663;
+			box-shadow: 0px 0px 2px 2px #CC3300;
 		}
 
 	form ::-webkit-input-placeholder {
@@ -2255,7 +2255,7 @@
 		}
 
 		#sidebar a {
-			color: #CC3300;
+			color: #FF9900;
 		}
 
 		#sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6 {
@@ -2418,7 +2418,7 @@
 
 				#logo a {
 					display: block;
-					background-color: #c94663;
+					background-color: #CC3300;
 					background-image: url("images/bg01.png");
 					padding: 0.875em 0.25em;
 					border-radius: 0.2em;

@@ -21,7 +21,7 @@
 
     <script type="text/javascript">
         $.get("https://raw.githubusercontent.com/kinetichorizons/Devotions/master/apps/download/version.txt", function (data) {
-            var y = 1.2; //Version
+            var y = 1.3; //Version
             if (data > y) {
                 if (confirm("Update is available!")) window.open('http://kinetichorizons.github.io/Devotions/apps/', '_system', 'location=yes');
             }
@@ -65,7 +65,7 @@
                 <div class="center">
                     <p><a href="#" onclick="window.open('http://www.kcm.org/', '_system');">All credits for the devotions go to Kenneth &amp; Gloria Copeland.</a></p><br />
                     <div class="center">
-                        <input style="width:70%;" type="image" value="Choose Date" id="datepicker" onchange="$('#results').load('dev/' + (document.getElementById('datepicker').value) + '.html'); window.scrollTo(0, 0);" src="images/Calendar.png">
+                        <input style="width:40%;" type="image" value="Choose Date" id="datepicker" onclick="window.scrollTo(0, 1200);" onchange="$('#results').load('dev/' + (document.getElementById('datepicker').value) + '.html'); window.scrollTo(0, 0);" src="images/Calendar.png">
                         <p>Choose a Daily Devotion...</p>
                     </div>
                 </div>
@@ -92,11 +92,19 @@
             </ul>
         </nav>
 
+        <!-- Text -->
+        <section class="box text-style1">
+            <div class="inner">
+                <p>All credits for the devotions go to Kenneth &amp; Gloria Copeland.</p>
+                <p><a href="#" onclick="window.open('http://www.kcm.org/', '_system');">www.kcm.org</a></p>
+            </div>
+        </section>
+
         <!-- Copyright -->
         <ul id="copyright">
             <li>&copy; 2016</li>
             <li><a href="http://kinetichorizons.github.io/Devotions/">KINETIC HORIZONS</a></li>
-            <p class="textshadow">Version 1.2.0</p><!-- Version -->
+            <p class="textshadow">Version 1.3.0</p><!-- Version -->
         </ul>
 
     </div>
